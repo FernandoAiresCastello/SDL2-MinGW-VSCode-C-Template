@@ -1,4 +1,4 @@
-exe
+*.exe
 bin
 obj
 debug
