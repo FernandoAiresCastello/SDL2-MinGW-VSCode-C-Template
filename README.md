@@ -16,6 +16,10 @@ This starter contains the following features:
 - The ***run.bat*** file contains batch commands to automatically compile the template.c file into template.exe by linking with the SDL2 libraries and then execute the sample application.
 - The ***.vscode*** folder contains VSCode specific configuration files to work with the C/C++ extension. You might need to tweak some settings so they apply to your actual environment.
 
+To test your setup:
+
+Open this template folder in VSCode, bring up the terminal, type **run** then press enter. This will execute the batch file run.bat, which will automatically compile/link the code, generate the executable and launch it.
+
 Follow the instructions below if you still don't have SDL2 properly installed in your MinGW setup:
 
 **Note:** In the SDL2 MinGW development libraries distribution archive you might find the same library files in two different subfolders like i686-w64-mingw32 and x86_64-w64-mingw32. Be sure to pick the files from inside the **i686-w64-mingw32** folder only, since this is where the 32-bit stuff is located, or the template will not compile properly.
