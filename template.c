@@ -28,7 +28,15 @@ int main(int argc, char* argv[]) {
     SDL_SetWindowPosition(window, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     SDL_RaiseWindow(window);
 
-    SDL_Delay(1000);
+    int running = 1;
+    SDL_Event event;
+    while (running) {
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_QUIT) {
+                running = 0;
+            }
+        }
+    }
 
     SDL_DestroyTexture(screenTexture);
     SDL_DestroyRenderer(renderer);
